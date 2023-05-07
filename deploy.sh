@@ -21,9 +21,8 @@ az storage blob delete-batch --account-name $storage_account_name \
 # Upload all files from current folder to the $web container
 az storage blob upload-batch --destination \$web \
   --account-name $storage_account_name \
-  --source . \
+  --source ./src/public \
   --destination-path "/" \
-  --pattern "!*.sh" \
   --auth-mode key \
   --account-key $account_key
 

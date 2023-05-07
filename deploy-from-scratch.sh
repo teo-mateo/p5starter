@@ -21,7 +21,7 @@ az storage blob service-properties update --account-name $storage_account_name \
 # Upload all files from current folder to the $web container
 az storage blob upload-batch --destination \$web \
   --account-name $storage_account_name \
-  --source . \
+  --source ./src/public \
   --destination-path "/"
 
 # Get the primary endpoint URL for the static website
