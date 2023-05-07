@@ -16,6 +16,7 @@ browserSync.init(
         browser: 'default',
         port: port+1, // The port that the proxy web server will run on.
         notify: false, // Don't show any notifications in the browser.
-        reloadDebounce: 2000 // Wait 2 seconds (2000 milliseconds) after a reload event before allowing more reload events to occur.
+        reloadDebounce: 200, // Wait 200ms before reloading so that multiple changes can be collated.
+        open: false // Don't open the browser window automatically.
     }
 )
