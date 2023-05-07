@@ -1,0 +1,19 @@
+{
+  "name": "p5starter",
+  "version": "1.0.0",
+  "description": "P5 starter project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Teodor B",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "@types/p5": "^1.6.1",
+    "p5": "^1.6.0"
+  }
+}
